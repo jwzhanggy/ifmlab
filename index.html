@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Home | Triangle</title>
+    <title>Home | IFM Lab</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
     <link href="css/animate.min.css" rel="stylesheet"> 
@@ -17,7 +17,7 @@
 	    <script src="js/html5shiv.js"></script>
 	    <script src="js/respond.min.js"></script>
     <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="shortcut icon" href="images/ifmlab_shortcut.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
@@ -78,6 +78,7 @@
                         <li class="dropdown"><a href="current_people.html">People<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="current_people.html">Current People</a></li>
+				<li><a href="opening.html">Position Opening</a></li>
                                 <li><a href="alumni.html">Alumni</a></li>
                                 <li><a href="album.html">Album</a></li>
                             </ul>
@@ -103,8 +104,10 @@
                             <ul role="menu" class="sub-menu">
                                 <li><a href="package.html">IFM Lab Package</a></li>
                                 <li><a href="package_install.html">Installation</a></li>
-                                <li><a href="package_documentation.html">Documentation</a></li>
-                                <li><a href="package_example.html">Example</a></li>
+				<li><a href="package_tutorial.html">Usage Tutorial</a></li>
+				<li><a href="package_guide.html">User Guide</a></li>
+                                <li><a href="package_documentation.html">API Documentation</a></li>
+                                <li><a href="package_example.html">Examples</a></li>
                             </ul>
                         </li>
                                                 
@@ -131,9 +134,10 @@
             <div class="row">
                 <div class="main-slider">
                     <div class="slide-text">
-                        <h1>We Are Creative Nerds</h1>
-                        <p>Boudin doner frankfurter pig. Cow shank bresaola pork loin tri-tip tongue venison pork belly meatloaf short loin landjaeger biltong beef ribs shankle chicken andouille.</p>
-                        <a href="#" class="btn btn-common">SIGN UP</a>
+                        <h1>IFM Lab <a href="#"  style="vertical-align:middle; font-size: 14px;color: #0099ae;font-family: 'Open Sans', sans-serif;" onclick="clickCounter()" id="result">Like us!</a> </h1>
+			<p>Our lab focuses on fusing multiple large-scale information sources of diverse varieties together, and carrying out synergistic data mining tasks across these fused sources in one unified analytic.<br> Fusing and mining multiple information sources of large volumes and diverse varieties is a fundamental problem in big data
+			studies.<br> We strive to develop general methodologies for information fusion and mining, which will be shown to work for a diverse set of applications.<br></p>
+			<p style="color:red">(Our lab has several positions avaiable. <a href="" style="color:blue;font-weight:bold">More information here</a>.)</p>
                     </div>
                     <img src="images/home/slider/hill.png" class="slider-hill" alt="slider image">
                     <img src="images/home/slider/house.png" class="slider-house" alt="slider image">
@@ -153,28 +157,28 @@
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="300ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <img src="images/home/icon1.png" alt="">
+                            <img src="images/home/toolkit.png" alt="">
                         </div>
-                        <h2>Incredibly Responsive</h2>
-                        <p>Ground round tenderloin flank shank ribeye. Hamkevin meatball swine. Cow shankle beef sirloin chicken ground round.</p>
+                        <h2>IFM.py Toolkit</h2>
+                        <p>IFM.py is an open-source toolkit released by IFM Lab. The toolkit covers the state-of-art algorithms for information fusion and data mining.</p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="600ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="600ms">
-                            <img src="images/home/icon2.png" alt="">
+                            <img src="images/home/book.png" alt="">
                         </div>
-                        <h2>Superior Typography</h2>
-                        <p>Hamburger ribeye drumstick turkey, strip steak sausage ground round shank pastrami beef brisket pancetta venison.</p>
+                        <h2>Fusion Learning Textbook</h2>
+                        <p>Fusion Learning is a textbook about informaiton fusion and data mining, mainly about the application on heterogeneous social networks. </p>
                     </div>
                 </div>
                 <div class="col-sm-4 text-center padding wow fadeIn" data-wow-duration="1000ms" data-wow-delay="900ms">
                     <div class="single-service">
                         <div class="wow scaleIn" data-wow-duration="500ms" data-wow-delay="900ms">
-                            <img src="images/home/icon3.png" alt="">
+                            <img src="images/home/data.png" alt="">
                         </div>
-                        <h2>Swift Page Builder</h2>
-                        <p>Venison tongue, salami corned beef ball tip meatloaf bacon. Fatback pork belly bresaola tenderloin bone pork kevin shankle.</p>
+                        <h2>Multiple Source Datasets</h2>
+                        <p>IFM Lab releases the multiple source datasets on Online Social Networks, Knowledge Graphs, Geographical Locations, Bio-Informatics, etc.</p>
                     </div>
                 </div>
             </div>
@@ -188,14 +192,14 @@
                 <div class="row">
                     <div class="action take-tour">
                         <div class="col-sm-7 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                            <h1 class="title">Triangle Corporate Template</h1>
-                            <p>A responsive, retina-ready &amp; wide multipurpose template.</p>
+                            <h1 class="title">IFM Lab Research Projects Overview</h1>
+                            <p>Information Fusion and Data Mining across Multiple Information Sources.</p>
                         </div>
                         <div class="col-sm-5 text-center wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
                             <div class="tour-button">
-                                <a href="#" class="btn btn-common">TAKE THE TOUR</a>
-                             </div>
-                        </div>
+				    <!--<button onclick="clickCounter()" class="btn btn-common">Like us!</button>-->
+                            </div>
+			</div>
                     </div>
                 </div>
             </div>
@@ -206,38 +210,63 @@
     <section id="features">
         <div class="container">
             <div class="row">
+
                 <div class="single-features">
                     <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image1.png" class="img-responsive" alt="">
+                        <img src="images/home/social_media.jpg" class="img-responsive" alt="">
                     </div>
                     <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Experienced and Enthusiastic</h2>
-                        <P>Pork belly leberkas cow short ribs capicola pork loin. Doner fatback frankfurter jerky meatball pastrami bacon tail sausage. Turkey fatback ball tip, tri-tip tenderloin drumstick salami strip steak.</P>
+                        <h2>Online Social Media Analysis</h2>
+                        <P>To enjoy different kinds social network services, people nowadays are usually involved in multiple online social networks simultaneously. Fusion and mining multiple aligned online social networks is one of the main stream research project of IFM Lab.</P>
                     </div>
                 </div>
-                <div class="single-features">
+
+		<div class="single-features">
                     <div class="col-sm-6 col-sm-offset-1 align-right wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Built for the Responsive Web</h2>
-                        <P>Mollit eiusmod id chuck turducken laboris meatloaf pork loin tenderloin swine. Pancetta excepteur fugiat strip steak tri-tip. Swine salami eiusmod sint, ex id venison non. Fugiat ea jowl cillum meatloaf.</P>
+                        <h2>Multiple Modality Text Mining</h2>
+                        <P>Multiple language systems co-exist simultaneously in the real world, like various natural languages and programming languages. When referring to certain concepts, different language will have their unique corpus sets. Identifying the correspondence relationships between different lauguage corpus sets is a new direction to be explored in IFM Lab.</P>
                     </div>
                     <div class="col-sm-5 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image2.png" class="img-responsive" alt="">
+                        <img src="images/home/text_mining.png" class="img-responsive" alt="">
                     </div>
                 </div>
+
                 <div class="single-features">
                     <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <img src="images/home/image3.png" class="img-responsive" alt="">
+                        <img src="images/home/knowledge_graph.png" class="img-responsive" alt="">
                     </div>
                     <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
-                        <h2>Experienced and Enthusiastic</h2>
-                        <P>Ut officia cupidatat anim excepteur fugiat cillum ea occaecat rump pork chop tempor. Ut tenderloin veniam commodo. Shankle aliquip short ribs, chicken eiusmod exercitation shank landjaeger spare ribs corned beef.</P>
+                        <h2>Heterogeneous Knowledge Graph Studies</h2>
+			<P>Knowledge and concepts in the real-world can be represented as a network structured diagram outlining their intrinsic relationships, namely the knowledge graphs. Many knowledge and concepts are shared by different knowledge graphs at the same time. Fusion of knowledge graphs from different sources is important for cross-source synergistic knowledge discovery.<br></P>
                     </div>
                 </div>
+
+		<div class="single-features">
+                    <div class="col-sm-6 align-right wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Geographical Data Sources Fusion</h2>
+                        <P>From the government and traffic service providers, different kinds of data about cities can be obtained, like crime rate, population density, bus drop-off points, metro train routes. Effective fusion of such diverse information sources together provides a new research direction for studying traffic and urban planning problems from the data driven perspective.</P>
+                    </div>
+		    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/home/geographical.png" class="img-responsive" alt="" style="width:800px;height:230px;">
+                    </div>
+                </div>
+		
+		<div class="single-features">
+                    <div class="col-sm-5 wow fadeInLeft" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <img src="images/home/bio_medical.jpg" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-sm-6 wow fadeInRight" data-wow-duration="500ms" data-wow-delay="300ms">
+                        <h2>Bio-Medical Research</h2>
+			<P>About the patients, different types of information will be collected before determining the desease they may have, including the brain fMRI image, regular physical diagnosis, and various drug tests. These complementary informaiton sources will provide a comprehensive information about the patient. Effectively fusing them will lead to <br></P>
+                    </div>
+                </div>
+		
             </div>
         </div>
     </section>
      <!--/#features-->
 
+      <!--
     <section id="clients">
         <div class="container">
             <div class="row">
@@ -272,6 +301,7 @@
         </div>
      </section>
     <!--/#clients-->
+    -->
 
     <footer id="footer">
         <div class="container">
@@ -281,23 +311,20 @@
                 </div>
                 <div class="col-md-4 col-sm-6">
                     <div class="testimonial bottom">
-                        <h2>Testimonial</h2>
+                        <h2>Quotes</h2>
                         <div class="media">
                             <div class="pull-left">
-                                <a href="#"><img src="images/home/profile1.png" alt=""></a>
+                                <a href="#"><img src="images/home/Aristotle.jpg" alt="" style="width:70px;height:90px;"></a>
                             </div>
                             <div class="media-body">
-                                <blockquote>Nisi commodo bresaola, leberkas venison eiusmod bacon occaecat labore tail.</blockquote>
-                                <h3><a href="#">- Jhon Kalis</a></h3>
+                                <blockquote>All men by nature desire to know.</blockquote>
+                                <h3><a href="https://en.wikipedia.org/wiki/Aristotle">- Aristotle</a></h3>
                             </div>
                          </div>
-                        <div class="media">
-                            <div class="pull-left">
-                                <a href="#"><img src="images/home/profile2.png" alt=""></a>
-                            </div>
-                            <div class="media-body">
-                                <blockquote>Capicola nisi flank sed minim sunt aliqua rump pancetta leberkas venison eiusmod.</blockquote>
-                                <h3><a href="">- Abraham Josef</a></h3>
+			 <div class="media">
+			    <div class="media-body">
+                                <blockquote>Three passions, simple but overwhelmingly strong, have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind. These passions, like great winds, have blown me hither and thither, in a wayward course, over a deep ocean of anguish, reaching to the very verge of despair.</blockquote>
+                                <h3><a href="https://en.wikipedia.org/wiki/Bertrand_Russell">- Bertrand Russell</a></h3>
                             </div>
                         </div>   
                     </div> 
@@ -306,7 +333,7 @@
                     <div class="contact-info bottom">
                         <h2>Contacts</h2>
                         <address>
-                        E-mail: <a href="mailto:someone@example.com">email@email.com</a> <br> 
+                        E-mail: <a href="mailto:someone@example.com">jwzhanggy [AT] gmail [dot] com</a> <br> 
                         Phone: +1 (123) 456 7890 <br> 
                         Fax: +1 (123) 456 7891 <br> 
                         </address>
@@ -323,25 +350,17 @@
                 <div class="col-md-4 col-sm-12">
                     <div class="contact-form bottom">
                         <h2>Send a message</h2>
-                        <form id="main-contact-form" name="contact-form" method="post" action="sendemail.php">
-                            <div class="form-group">
-                                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
-                            </div>
-                            <div class="form-group">
-                                <input type="email" name="email" class="form-control" required="required" placeholder="Email Id">
-                            </div>
-                            <div class="form-group">
-                                <textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
-                            </div>                        
-                            <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-submit" value="Submit">
-                            </div>
-                        </form>
+			<form action="mailto:jwzhanggy@gmail.com" method="post" enctype="text/plain">
+			<input type="text" name="name" class="form-control" required="required" placeholder="Your Name">
+			<input type="email" name="email" class="form-control" required="required" placeholder="Your Email ID">
+			<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+			<input type="submit" value="Send" class="btn btn-submit">
+			</form>
                     </div>
                 </div>
                 <div class="col-sm-12">
                     <div class="copyright-text text-center">
-                        <p>&copy; Your Company 2014. All Rights Reserved.</p>
+                        <p>&copy; IFM Lab 2017. All Rights Reserved.</p>
                         <p>Designed by <a target="_blank" href="http://www.themeum.com">Themeum</a></p>
                     </div>
                 </div>
@@ -354,6 +373,21 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
-    <script type="text/javascript" src="js/main.js"></script>   
+    <script type="text/javascript" src="js/main.js"></script> 
+    <script>
+	function clickCounter() {
+    		if(typeof(Storage) !== "undefined") {
+        		if (localStorage.clickcount) {
+            			localStorage.clickcount = Number(localStorage.clickcount)+1;
+        		} else {
+            			localStorage.clickcount = 1;
+        		}
+        		document.getElementById("result").innerHTML = localStorage.clickcount + " likes!";
+    		} else {
+        		document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
+    		}
+	}
+    </script>
+</script>
 </body>
 </html>

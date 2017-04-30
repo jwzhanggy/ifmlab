@@ -78,6 +78,7 @@
                         <li class="dropdown"><a href="current_people.html">People<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
                                 <li><a href="current_people.html">Current People</a></li>
+				<li><a href="opening.html">Position Opening</a></li>
                                 <li><a href="alumni.html">Alumni</a></li>
                                 <li><a href="album.html">Album</a></li>
                             </ul>
@@ -103,8 +104,10 @@
                             <ul role="menu" class="sub-menu">
                                 <li><a href="package.html">IFM Lab Package</a></li>
                                 <li><a href="package_install.html">Installation</a></li>
-                                <li><a href="package_documentation.html">Documentation</a></li>
-                                <li><a href="package_example.html">Example</a></li>
+				<li><a href="package_tutorial.html">Usage Tutorial</a></li>
+				<li><a href="package_guide.html">User Guide</a></li>
+                                <li><a href="package_documentation.html">API Documentation</a></li>
+                                <li><a href="package_example.html">Examples</a></li>
                             </ul>
                         </li>
                                                 
@@ -150,377 +153,506 @@
                     <div class="sidebar portfolio-sidebar">
 			<div class="sidebar-item categories">
                             <h3>Project Categories</h3>
-                            <ul class="nav navbar-stacked">
-                                <li><a href="#">Branded<span class="pull-right">(1)</span></a></li>
-                                <li class="active"><a href="#">Design<span class="pull-right">(8)</span></a></li>
-                                <li><a href="#">Folio<span class="pull-right">(4)</span></a></li>
-                                <li><a href="#">Logos<span class="pull-right">(9)</span></a></li>
-                                <li><a href="#">Mobile<span class="pull-right">(3)</span></a></li>
-                                <li><a href="#">Mockup<span class="pull-right">(4)</span></a></li>
-                                <li><a href="#">Php<span class="pull-right">(2)</span></a></li>
-                                <li><a href="#">Wordpress<span class="pull-right">(8)</span></a></li>
-                            </ul>
+			    <ul class="nav navbar-stacked" role="tablist">
+				    <!--<ul class="nav nav-pills" role="tablist">-->
+				 <li role="presentation" class="dropdown ">
+				 <a class="dropdown-toggle" onclick="javascript:showAllPublication();" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">All <span class="badge pull-right">53</span></a>
+				 <!--<ul class="dropdown-menu">
+				    <li style="padding-right:10px; padding-left:10px"><a href="https://scholar.google.com/citations?user=Lh7VfoMAAAAJ">Google Scholar (citations)</a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="http://dblp.uni-trier.de/pers/hd/k/Kong:Xiangnan">DBLP </a></li>
+				 </ul>-->
+				</li>
+			
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Year<span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('2017');"> 2017 <span class="badge pull-right">4</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('2016');"> 2016 <span class="badge pull-right">5</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('2015');"> 2015 <span class="badge pull-right">6</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('2014');"> 2014 <span class="badge pull-right">14</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('2013');"> 2013 <span class="badge pull-right">9</span> </a></li>
+				  </ul>
+				</li>
+
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="javascript:showContentWithType('research-area');" role="button" aria-haspopup="true" aria-expanded="false"> Research Areas <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('data-mining');"> Data Mining <span class="badge pull-right">39</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('machine-learning');"> Machine Learning <span class="badge pull-right">29</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('social-science');"> Social Science <span class="badge pull-right">29</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('bio-informatics');"> Bio-informatics <span class="badge pull-right">11</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px; length:200px"><a href="javascript:showContentWithType('urban-traffic-planning');">  Urban/Traffic Planning &nbsp; &nbsp; <span class="badge pull-right">9</span> </a></li>
+				  </ul>
+				</li>
+				
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="javascript:showContentWithType('application-problem');" role="button" aria-haspopup="true" aria-expanded="false"> Application Problems <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('network-alignment');"> Network Alignment &nbsp; &nbsp; <span class="badge pull-right">39</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('link-prediction');"> Link Prediction <span class="badge pull-right">11</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('community-detection');"> Community Detection  <span class="badge pull-right">9</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('information-propagation');"> Information Propagation <span class="badge pull-right">29</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('viral-marketing');"> Viral Marketing <span class="badge pull-right">29</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('network-embedding');"> Network Embedding <span class="badge pull-right">11</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('matching');"> Matching Problem <span class="badge pull-right">11</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('planning');"> Planning Problem <span class="badge pull-right">11</span> </a></li>				    					<li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('others');"> Other Problems <span class="badge pull-right">11</span> </a></li>
+				  </ul>
+				</li>
+
+				
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="javascript:showContentWithType('dataset-category');" role="button" aria-haspopup="true" aria-expanded="false"> Dataset Categories <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('social-network');"> Social Network &nbsp; &nbsp; <span class="badge pull-right">39</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('knowledge-graph');"> Knowledge Graph <span class="badge pull-right">11</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('bibliographic-network');"> Bibliographic Network &nbsp; &nbsp; <span class="badge pull-right">9</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('enterprise-data');"> Enterprise Data  <span class="badge pull-right">9</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('text-data');"> Text Data <span class="badge pull-right">29</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('urban-traffic-data');"> Urban/Traffic Data <span class="badge pull-right">29</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('signed-network');"> Signed Network <span class="badge pull-right">11</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('brain-network');"> Brain Network <span class="badge pull-right">11</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('time-series-data');"> Time Series Data <span class="badge pull-right">11</span> </a></li>
+				  </ul>
+				</li>
+					
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" onclick="javascript:showContentWithType('machine-learning');" role="button" aria-haspopup="true" aria-expanded="false">Machine Learning Techniques <span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('fusion-learning');"> Fusion Learning <span class="badge pull-right">2</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('supervised-learning');"> Supervised Learning <span class="badge pull-right">11</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('unsupervised-learning');"> Unsupervised Learning <span class="badge pull-right">11</span> </a></li>
+			    	    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('pu-learning');">  Positive &amp; Unlabeled Learning <span class="badge pull-right">2</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('sparse-learning');"> Sparse Learning <span class="badge pull-right">1</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('collective-classification');"> Collective Classification <span class="badge pull-right">8</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('semisupervise-learning');"> Semi-supervised Learning <span class="badge pull-right">2</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('active-learning');"> Active Learning <span class="badge pull-right">2</span> </a></li>
+				  </ul>
+				</li>
+
+				<li class="dropdown">
+				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Publication Type<span class="caret"></span></a>
+				  <ul class="dropdown-menu">
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('conference');"> Conference Full Paper &nbsp; &nbsp; <span class="badge pull-right">42</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('journal');"> Journal Article <span class="badge pull-right">8</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('book');"> Book Chapter <span class="badge pull-right">3</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('demo');"> Poster Short Paper <span class="badge pull-right">1</span> </a></li>
+				  </ul>
+				</li>
+			    </ul>
                         </div>
                     </div>
                 </div>
 		<div class="sidebar-item  recent">
                     <div class="col-md-9 col-sm-8">
-                      <div class="padding-left">
-                        <div class="row">
-                            <h3>2017</h3>
+                        <div class="padding-left">
+                            <div class="row">
+			        <div class="panel-body">
+				    <!------------------------------------------------------------------------------------------------------------>
+				    <h3>2017</h3>
+				    <ul class="list-group">
+					<!--------------------------------------- -->
+					<li class="list-group-item data-mining machine-learning social-science link-prediction matching social-network bibliographic-network enterprise-data fusion-learning supervised-learning semisupervise-learning conference publication 2017" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">WSDM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Link Prediction with Cardinality Constraints</a></h4>
+						    <p>Jiawei Zhang, Jianhui Chen, Junxing Zhu, Yi Chang, and Philip S. Yu</p>
+						   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment, Social Link Prediction, Organizational Chart Inference</p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+
+					<!--------------------------------------- -->					
+					<li class="list-group-item data-mining social-science matching planning social-network enterprise-data fusion-learning unsupervised-learning clustering conference publication 2017" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">WSDM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Enterprise Employee Training via Project Team Formation</a></h4>
+						    <p>Jiawei Zhang, Philip S. Yu, Yuanhua Lv</p>
+						   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Employee Training, Team Formation</p>
+						</div>
+					    </div>
+					</li>
+				    </ul>
+				    <!--------------------------------------- -->
+
+				    <!------------------------------------------------------------------------------------------------------------>
+				    <h3>2016</h3>
+				    <ul class="list-group">
+					<!--------------------------------------- -->
+					<li class="list-group-item data-mining machine-learning network-alignment matching social-network fusion-learning unsupervised-learning sparse-learning conference publication 2016" style="border:0;padding:10px 0px">
+				    	    <div class="media">
+						<div class="pull-left">
+						    <a href="#">WWW</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">PCT: Partial Co-Alignment of Social Networks</a></h4>
+						    <p>Jiawei Zhang and Philip S. Yu</p>
+						   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment</p>
+						</div>
+					    </div>
+				        </li>
+					<li class="list-group-item data-mining social-science information-propagation social-network enterprise-data supervised-learning conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">WWW</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">HeteroSales: Utilizing Heterogeneous Social Networks to Identify the Next Enterprise Customer</a></h4>
+						    <p>Qingbo Hu, Sihong Xie, Jiawei Zhang, Qiang Zhu and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a></p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining urban-traffic-planning planning urban-traffic-data fusion-learning supervised-learning conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">SIGSPATIAL</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Bicycle-Sharing Systems Expansion: Station Re-Deployment through Crowd Planning</a></h4>
+						    <p>Jiawei Zhang, Xiao Pan, Moyin Li and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Bicycle Sharing System Expansion, Crowd Sourcing</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science information-propagation social-network enterprise-data fusion-learning supervised-learning conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">CIKM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Information Diffusion at Workplace</a></h4>
+						    <p>Jiawei Zhang, Philip S. Yu, Yuanhua Lv and Qianyi Zhan</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion, Heterogeneous Information Network</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science bio-informatics information-propagation social-network text-data fusion-learning supervised-learning conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">BIBM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Inferring Social Influence of Anti-Tobacco Mass Media Campaigns</a></h4>
+						    <p>Jiawei Zhang and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion</p>
+						</div>
+					    </div>
+				        </li>
+					<li class="list-group-item data-mining social-science community-detection information-propagation social-network signed-network fusion-learning unsupervised-learning conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">ECML/</a><br>
+						    <a href="#">PKDD</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Trust Hole Identification in Signed Networks</a></h4>
+						    <p>Jiawei Zhang, Qianyi Zhan, Lifang He, Charu C. Aggarwal and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Trust Hole, Clustering, Signed Networks</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining machine-learning bio-informatics community-detection brain-network fusion-learning supervised-learning clustering conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">ECML/</a><br>
+						    <a href="#">PKDD</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Multi-Graph Clustering based on Interior-Node Topology with Applications to Brain Networks</a></h4>
+						    <p>Guixiang Ma, Lifang He, Bokai Cao, Jiawei Zhang, Philip S. Yu, and Ann B. Ragin</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering, Brain Networks</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining machine-learning community-detection social-network fusion-learning unsupervised-learning clustering conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">IJCNN</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Multi-Source Multi-View Clustering via Discrepancy Penalty</a></h4>
+						    <p>Weixiang Shao, Jiawei Zhang, Lifang He and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering, Multi-Source Learning, Multi-View Learning</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science others social-network conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">ASONAM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Social Badge System Analysis.</a></h4>
+						    <p>Jiawei Zhang, Xiangnan Kong and Philip S. Yu</p>
+						    <p><font color="red">Best Student Paper Runner-up Award</font></p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Badge Reward System Design</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science information-propagation viral-marketing social-network unsupervised-learning conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">ASONAM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Intertwined Viral Marketing in Social Networks</a></h4>
+						    <p>Jiawei Zhang, Senzhang Wang, Qianyi Zhan and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion, Viral Marketing</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science others social-network conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">IEEE</a></br>
+						    <a href="#">BigData</a> 
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Distance-based Social Discovery with Posterior Privacy Verification</a></h4>
+						    <p>Xiao Pan, Jiawei Zhang, Fengjiao Wang and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Geo-spatial Data Analysis, Privacy Protection</p>
+						</div>
+					    </div>
+				        </li>
+					<li class="list-group-item data-mining social-science information-propagation viral-marketing social-network unsupervised-learning conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">IRI</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Discover Tipping Users For Cross Network Influencing</a></h4>
+						    <p>Qianyi Zhan, Jiawei Zhang, Philip S. Yu and Junyuan Xie</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion, Social Influence Propagation</p>
+						</div>
+					    </div>
+				        </li>
+					<li class="list-group-item data-mining urban-traffic-planning others urban-traffic-data supervised-learning conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">MDM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Bicycle-Sharing System Analysis and Trip Prediction</a></h4>
+						    <p>Jiawei Zhang, Xiao Pan, Moyin Li and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Bicycle Sharing System Analysis, Trip Prediction</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining urban-traffic-planning planning urban-traffic-data unsupervised-learning conference publication 2016" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">CIC</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Trip Route Planning for Bicycle-Sharing Systems</a></h4>
+						    <p>Jiawei Zhang and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Bicycle Sharing System Analysis, Trip Route Planning</p>
+						</div>
+					    </div>
+					</li>
+				    </ul>
+				    
+				    <h3>2015</h3>
+				    <ul class="list-group">
+					<!--------------------------------------- -->
+					<li class="list-group-item data-mining social-science link-prediction matching social-network enterprise-data fusion-learning unsupervised-learning conference publication 2015" style="border:0;padding:10px 0px">
+				    	    <div class="media">
+						<div class="pull-left">
+						    <a href="#">KDD</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Organizational Chart Inference</a></h4>
+						    <p>Jiawei Zhang, Philip S. Yu and Yuanhua Lv</p>
+						   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Structure Inference</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining machine-learning social-science network-alignment matching social-network fusion-learning unsupervised-learning sparse-learning conference publication 2015" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">ICDM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Multiple Anonymized Social Networks Alignment</a></h4>
+						    <p>Jiawei Zhang and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining machine-learning network-alignment link-prediction social-network fusion-learning pu-learning conference publication 2015" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">IJCAI</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Integrated Anchor and Social Link Predictions across Partially Aligned Social Networks</a></h4>
+						    <p>Jiawei Zhang and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment, Link Prediction</p>
+						</div>
+					    </div>
+				        </li>
+					<li class="list-group-item data-mining social-science link-prediction social-network enterprise-data fusion-learning supervised-learning conference publication 2015" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">CIKM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Enterprise Social Link Recommendation</a></h4>
+						    <p>Jiawei Zhang, Yuanhua Lv and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Link Prediction</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining machine-learning community-detection social-network fusion-learning unsupervised-learning clustering conference publication 2015" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">SDM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Community Detection for Emerging Networks</a></h4>
+						    <p>Jiawei Zhang and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science network-alignment matching social-network fusion-learning supervised-learning conference publication 2015" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">IRI</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">PNA: Partial Network Alignment with Generic Stable Matching</a></h4>
+						    <p>Jiawei Zhang, Weixiang Shao, Senzhang Wang, Xiangnan Kong and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining machine-learning community-detection social-network fusion-learning unsupervised-learning clustering conference publication 2015" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">IEEE</a></br>
+						    <a href="#">BigData</a></br>
+						    <a href="#">Congress</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">MCD: Mutual Clustering across Multiple Heterogeneous Networks</a></h4>
+						    <p>Jiawei Zhang and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering, Community Detection</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science information-propagation viral-marketing social-network fusion-learning conference publication 2015" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">PAKDD</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Influence Maximization across Partially Aligned Heterogenous Social Networks</a></h4>
+						    <p>Qianyi Zhan, Jiawei Zhang, Senzhang Wang, Philip S. Yu and Junyuan Xie</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion, Influence Maximization</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science link-prediction information-propagation social-network fusion-learning conference publication 2015" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">DASFAA</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Inferring Diffusion Networks with Structure Transfer</a></h4>
+						    <p>Jiawei Zhang and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Structure Inference</p>
+						</div>
+					    </div>
+					</li>
+				    </ul>
                             
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">WSDM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Link Prediction with Cardinality Constraints</a></h4>
-                                    <p>Jiawei Zhang, Jianhui Chen, Junxing Zhu, Yi Chang, and Philip S. Yu</p>
-				   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment, Social Link Prediction, Organizational Chart Inference</p>
-                                </div>
+				    <h3>2014</h3>
+				    <ul class="list-group">
+					<!--------------------------------------- -->
+					<li class="list-group-item data-mining machine-learning social-science link-prediction social-network fusion-learning pu-learning conference publication 2014" style="border:0;padding:10px 0px"> 
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">KDD</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Meta-path based Multi-network Collective Link Prediction</a></h4>
+						    <p>Jiawei Zhang, Philip S. Yu and Zhi-Hua Zhou</p>
+						   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Link Prediction</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science link-prediction social-network fusion-learning supervised-learning collective-classification conference publication 2014" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">ICDM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Transferring Heterogeneous Links across Location-Based Social Networks</a></h4>
+						    <p>Jiawei Zhang, Xiangnan Kong and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Link Prediction</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining machine-learning social-science community-detection social-network fusion-learning unsupervised-learning clustering conference publication 2014" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">IEEE</a></br>
+						    <a href="#">BigData</a> 
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Synergistic Partitioning in Multiple Large Scale Social Networks</a></h4>
+						    <p>Songchang Jin, Jiawei Zhang, Philip S. Yu, Shuqiang Yang and Aiping Li</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering, Community Detection</p>
+						</div>
+					    </div>
+					</li>
+				    </ul>
+				    
+				    <h3>2013</h3>
+				    <ul class="list-group">
+					<!--------------------------------------- -->
+					<li class="list-group-item data-mining social-science link-prediction social-network fusion-learning supervised-learning conference publication 2013" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">ICDM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Predicting Social Links for New Users across Aligned Heterogeneous Social Networks</a></h4>
+						    <p>Jiawei Zhang, Xiangnan Kong and Philip S. Yu</p>
+						   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Link Prediction</p>
+						</div>
+					    </div>
+					</li>
+					<li class="list-group-item data-mining social-science network-alignment link-prediction matching social-network fusion-learning supervised-learning conference publication 2013" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="#">CIKM</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="#">Inferring Anchor Links across Heterogeneous Social Networks</a></h4>
+						    <p>Xiangnan Kong, Jiawei Zhang and Philip S. Yu</p>
+						    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment</p>
+						</div>
+					    </div>
+				        </li>
+				    </ul>
+			  	</div>
                             </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">WSDM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Enterprise Employee Training via Project Team Formation</a></h4>
-                                    <p>Jiawei Zhang, Philip S. Yu, Yuanhua Lv</p>
-				   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Employee Training, Team Formation</p>
-                                </div>
-                            </div>
-                            
-                            <!------------------------------------------------------------------------------------------------------------>
-                            <h3>2016</h3>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">WWW</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">PCT: Partial Co-Alignment of Social Networks</a></h4>
-                                    <p>Jiawei Zhang and Philip S. Yu</p>
-				   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">WWW</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">HeteroSales: Utilizing Heterogeneous Social Networks to Identify the Next Enterprise Customer</a></h4>
-                                    <p>Qingbo Hu, Sihong Xie, Jiawei Zhang, Qiang Zhu and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Heterogeneous Information Networks, Customer Identification</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">SIGSPATIAL</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Bicycle-Sharing Systems Expansion: Station Re-Deployment through Crowd Planning</a></h4>
-                                    <p>Jiawei Zhang, Xiao Pan, Moyin Li and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Bicycle Sharing System Expansion, Crowd Sourcing</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">CIKM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Information Diffusion at Workplace</a></h4>
-                                    <p>Jiawei Zhang, Philip S. Yu, Yuanhua Lv and Qianyi Zhan</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion, Heterogeneous Information Network</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">BIBM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Inferring Social Influence of Anti-Tobacco Mass Media Campaigns</a></h4>
-                                    <p>Jiawei Zhang and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">ECML/PKDD</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Trust Hole Identification in Signed Networks</a></h4>
-                                    <p>Jiawei Zhang, Qianyi Zhan, Lifang He, Charu C. Aggarwal and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Trust Hole, Clustering, Signed Networks</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">ECML/PKDD</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Multi-Graph Clustering based on Interior-Node Topology with Applications to Brain Networks</a></h4>
-                                    <p>Guixiang Ma, Lifang He, Bokai Cao, Jiawei Zhang, Philip S. Yu, and Ann B. Ragin</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering, Brain Networks</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">IJCNN</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Multi-Source Multi-View Clustering via Discrepancy Penalty</a></h4>
-                                    <p>Weixiang Shao, Jiawei Zhang, Lifang He and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering, Multi-Source Learning, Multi-View Learning</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">ASONAM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Social Badge System Analysis.</a></h4>
-                                    <p>Jiawei Zhang, Xiangnan Kong and Philip S. Yu</p>
-                                    <p><font color="red">Best Student Paper Runner-up Award</font></p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Badge Reward System Design</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">ASONAM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Intertwined Viral Marketing in Social Networks</a></h4>
-                                    <p>Jiawei Zhang, Senzhang Wang, Qianyi Zhan and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion, Viral Marketing</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">BigData</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Distance-based Social Discovery with Posterior Privacy Verification</a></h4>
-                                    <p>Xiao Pan, Jiawei Zhang, Fengjiao Wang and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Geo-spatial Data Analysis, Privacy Protection</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">IRI</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Discover Tipping Users For Cross Network Influencing</a></h4>
-                                    <p>Qianyi Zhan, Jiawei Zhang, Philip S. Yu and Junyuan Xie</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion, Social Influence Propagation</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">MDM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Bicycle-Sharing System Analysis and Trip Prediction</a></h4>
-                                    <p>Jiawei Zhang, Xiao Pan, Moyin Li and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Bicycle Sharing System Analysis, Trip Prediction</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">CIC</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Trip Route Planning for Bicycle-Sharing Systems</a></h4>
-                                    <p>Jiawei Zhang and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Bicycle Sharing System Analysis, Trip Route Planning</p>
-                                </div>
-                            </div>
-                            
-                            <h3>2015</h3>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">KDD</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Organizational Chart Inference</a></h4>
-                                    <p>Jiawei Zhang, Philip S. Yu and Yuanhua Lv</p>
-				   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Structure Inference</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">ICDM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Multiple Anonymized Social Networks Alignment</a></h4>
-                                    <p>Jiawei Zhang and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">IJCAI</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Integrated Anchor and Social Link Predictions across Partially Aligned Social Networks</a></h4>
-                                    <p>Jiawei Zhang and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment, Link Prediction</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">CIKM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Enterprise Social Link Recommendation</a></h4>
-                                    <p>Jiawei Zhang, Yuanhua Lv and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Link Prediction</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">SDM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Community Detection for Emerging Networks</a></h4>
-                                    <p>Jiawei Zhang and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">IRI</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">PNA: Partial Network Alignment with Generic Stable Matching</a></h4>
-                                    <p>Jiawei Zhang, Weixiang Shao, Senzhang Wang, Xiangnan Kong and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">BigData</a></br>
-                                    <a href="#">Congress</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">MCD: Mutual Clustering across Multiple Heterogeneous Networks</a></h4>
-                                    <p>Jiawei Zhang and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering, Community Detection</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">PAKDD</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Influence Maximization across Partially Aligned Heterogenous Social Networks</a></h4>
-                                    <p>Qianyi Zhan, Jiawei Zhang, Senzhang Wang, Philip S. Yu and Junyuan Xie</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Information Diffusion, Influence Maximization</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">DASFAA</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Inferring Diffusion Networks with Structure Transfer</a></h4>
-                                    <p>Jiawei Zhang and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Structure Inference</p>
-                                </div>
-                            </div>
-                            
-                            <h3>2014</h3>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">KDD</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Meta-path based Multi-network Collective Link Prediction</a></h4>
-                                    <p>Jiawei Zhang, Philip S. Yu and Zhi-Hua Zhou</p>
-				   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Link Prediction</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">ICDM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Transferring Heterogeneous Links across Location-Based Social Networks</a></h4>
-                                    <p>Jiawei Zhang, Xiangnan Kong and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Link Prediction</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">BigData</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Synergistic Partitioning in Multiple Large Scale Social Networks</a></h4>
-                                    <p>Songchang Jin, Jiawei Zhang, Philip S. Yu, Shuqiang Yang and Aiping Li</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Clustering, Community Detection</p>
-                                </div>
-                            </div>
-			
-                            <h3>2013</h3>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">ICDM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Predicting Social Links for New Users across Aligned Heterogeneous Social Networks</a></h4>
-                                    <p>Jiawei Zhang, Xiangnan Kong and Philip S. Yu</p>
-				   <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Link Prediction</p>
-                                </div>
-                            </div>
-                            
-                            <div class="media">
-                                <div class="pull-left">
-                                    <a href="#">CIKM</a>
-                                </div>
-                                <div class="media-body">
-                                    <h4><a href="#">Inferring Anchor Links across Heterogeneous Social Networks</a></h4>
-                                    <p>Xiangnan Kong, Jiawei Zhang and Philip S. Yu</p>
-                                    <p><a href="#">PDF</a>, <a href="#"> BIB </a>, <a href="#">Slides</a>, Topics: Network Alignment</p>
-                                </div>
-                            </div>
-                            
-                            <h3></h3>
-                            
-                        </div>
-		    </div>
-             	</div>
-              </div>
+		     	</div>
+             	    </div>
+                </div>
             </div>
         </div>
     </section>
     <!--/#projects-->
-
 
     <footer id="footer">
         <div class="container">
@@ -596,6 +728,11 @@
                 </div>
             </div>
         </div>
+             	</div>
+              </div>
+            </div>
+        </div>
+
     </footer>
     <!--/#footer-->
 
@@ -606,5 +743,26 @@
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min2.js"></script>
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="assets/js/ie-emulation-modes-warning.js"></script>
+    <script language="JavaScript">
+        var allTypes = new Array('machine-learning', 'data-mining')
+        function showAllPublication() {
+            $(".publication").show("slow");
+        }
+        function showContentWithType(typeName) {
+            $(".publication").hide("slow");
+            $("." + typeName).show("slow");
+        }
+    </script>
+    <!--<script>
+	$(function(){
+		$('.nav a').click(function(){
+			$(this).parent().addClass('active').siblings().removeClass('active')	
+		})
+	})
+    </script>-->
 </body>
 </html>
