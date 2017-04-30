@@ -1250,12 +1250,16 @@ Portfolio with right sidebar
   opacity: 1;
 }
 
+
 .categories .navbar-stacked li.active a{
   color: #0099AE;
   padding-left: 20px;
 }
 
 .categories .navbar-stacked li.active a:before{
+  background: none;/**/
+  color: #0099AE;/*change font color*/
+  padding-left: 20px;/*change padding gap*/
   position: absolute;
   content: "";
   border-color: transparent transparent transparent #0099AE;
@@ -1272,6 +1276,9 @@ Portfolio with right sidebar
 }
 
 .categories .navbar-stacked li.active a:after {
+  background: none;/**/
+  color: #0099AE;/*change font color*/
+  padding-left: 20px;/*change padding gap*/
   position: absolute;
   content: "";
   border-color: transparent transparent transparent #fff;
