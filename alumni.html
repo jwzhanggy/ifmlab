@@ -43,11 +43,8 @@
 	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 		<script type="text/javascript">
 		$(function () {
-			
 			var filterList = {
-			
 				init: function () {
-				
 					// MixItUp plugin
 					// http://mixitup.io
 					$('#portfoliolist').mixitup({
@@ -58,11 +55,8 @@
 						// call the hover effect
 						onMixEnd: filterList.hoverEffect()
 					});				
-				
 				},
-				
 				hoverEffect: function () {
-				
 					// Simple parallax effect
 					$('#portfoliolist .portfolio').hover(
 						function () {
@@ -74,21 +68,15 @@
 							$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
 						}		
 					);				
-				
 				}
-	
 			};
-			
 			// Run the show!
 			filterList.init();
-			
-			
 		});	
 		</script>
 		<!-- Gallery Script Ends -->
 
-
-<header id="header">      
+    <header id="header">      
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 overflow">
@@ -198,7 +186,7 @@
                 <div class="row">
                     <div class="action">
                         <div class="col-sm-12">
-                            <h1 class="title">Current Lab Members</h1>
+                            <h1 class="title">Previous Lab Members</h1>
                         </div>
                     </div>
                 </div>
@@ -213,10 +201,9 @@
                 <div class="col-md-3 col-sm-4">
                     <div class="sidebar portfolio-sidebar">
                         <div class="sidebar-item categories">
-                            <h3>Members</h3>
+                            <h3>Alumni</h3>
                             <ul class="nav navbar-stacked" id="filter">
-                                <li class="active"><a href="#"><span class="filter" data-filter="director postdoc phd master undergraduate visitingp visitings alumni">All &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pull-right">(20)</span></a></li>
-                                <li><a href="#"><span class="filter" data-filter="director">Director &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pull-right">(1)</span></a></li>
+                                <li class="active"><a href="#"><span class="filter" data-filter="phd master undergraduate postdoc visitingp visitings">All &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span class="pull-right">(20)</span></a></li>
                                 <li><a href="#"><span class="filter" data-filter="phd">PhD Student &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pull-right">(4)</span></a></li>
                                 <li><a href="#"><span class="filter" data-filter="master">Master Student &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pull-right">(9)</span></a></li>
                                 <li><a href="#"><span class="filter" data-filter="undergraduate">Undergraduate Student &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pull-right">(3)</span></a></li>
@@ -224,19 +211,18 @@
 				<li><a href="#"><span class="filter" data-filter="visitingp">Visiting Professors &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pull-right">(4)</span></a></li>
                                 <li><a href="#"><span class="filter" data-filter="visitings">Visiting Students &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pull-right">(2)</span></a></li>
 				<!--<li><a href="#"><span class="filter" data-filter="alumni">Alumni  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pull-right">(8)</span></a></li>-->
-				<li><a href="alumni.html"><span >Alumni  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span><span class="pull-right">(8)</span></a></li>
                             </ul>
                         </div>
                         <div class="sidebar-item  recent">
-                            <h3>Recent Papers</h3>
+                            <h3>Thesis</h3>
                             <div class="media">
                                 <div class="pull-left">
                                     <a href="#"><img src="images/portfolio/project1.jpg" alt=""></a>
                                 </div>
                                 <div class="media-body">
                                     <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>
-                                    <p>Conference</p>
-                                    <p>Date</p> 
+                                    <p><a href="#">Name</a></p>
+                                    <p>Date</p>
                                 </div>
                             </div>
                             <div class="media">
@@ -245,7 +231,7 @@
                                 </div>
                                 <div class="media-body">
                                     <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>
-                                    <p>Conference</p>
+                                    <p><a href="#">Name</a></p>
                                     <p>Date</p>
                                 </div>
                             </div>
@@ -255,21 +241,21 @@
                                 </div>
                                 <div class="media-body">
                                     <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>
-                                    <p>Conference</p>
+				    <p><a href="#">Name</a></p>
                                     <p>Date</p>
                                 </div>
                             </div>
                         </div>
                         
                         <div class="sidebar-item  recent">
-                            <h3>Recent Projects</h3>
+                            <h3>Projects</h3>
                             <div class="media">
                                 <div class="pull-left">
                                     <a href="#"><img src="images/portfolio/project1.jpg" alt=""></a>
                                 </div>
                                 <div class="media-body">
                                     <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>
-                                    <p>Since  07 March 2014</p>
+                                    <p>Date</p>
                                 </div>
                             </div>
                             <div class="media">
@@ -278,7 +264,7 @@
                                 </div>
                                 <div class="media-body">
                                     <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>
-                                    <p>Since  07 March 2014</p>
+                                    <p>Date</p>
                                 </div>
                             </div>
                             <div class="media">
@@ -287,7 +273,7 @@
                                 </div>
                                 <div class="media-body">
                                     <h4><a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit,</a></h4>
-                                    <p>Since  07 March 2014</p>
+                                    <p>Date</p>
                                 </div>
                             </div>
                         </div>
@@ -297,44 +283,6 @@
                 <div class="col-md-9 col-sm-8">
                     <div class="row">
                     	<div id="portfoliolist">
-
-                    	    <div class="portfolio director mix_all" data-cat="director" style="display: inline-block; opacity: 1;">
-			        <div class="portfolio-wrapper ">		
-				    <div class="portfolio-single">
-                                        <div class="portfolio-thumb">
-                                            <img src="images/portfolio/1.jpg" class="img-responsive" alt="">
-                                        </div>
-                                    	<div class="portfolio-view">
-                                            <ul class="nav nav-pills">
-                                            	<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
-                                            	<li><a href="images/portfolio/1.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="portfolio-info ">
-                                        <h2>Sailing Vivamus</h2>
-                                    </div>						
-				</div>
-		            </div>
-
-                    	    <div class="portfolio postdoc mix_all" data-cat="postdoc" style="display: inline-block; opacity: 1;">
-				<div class="portfolio-wrapper ">		
-				    <div class="portfolio-single">
-                                        <div class="portfolio-thumb">
-                                            <img src="images/portfolio/2.jpg" class="img-responsive" alt="">
-                                        </div>
-                                        <div class="portfolio-view">
-                                            <ul class="nav nav-pills">
-                                            	<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
-                                            	<li><a href="images/portfolio/2.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
-                                            </ul>
-                                    	</div>
-                                    </div>
-                                    <div class="portfolio-info ">
-                                        <h2>Sailing Vivamus</h2>
-                                    </div>						
-				</div>
-			    </div>
 
 			    <div class="portfolio phd mix_all" data-cat="phd" style="display: inline-block; opacity: 1;">
 				<div class="portfolio-wrapper ">		
@@ -346,6 +294,7 @@
                                             <ul class="nav nav-pills">
                                             	<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
                                             	<li><a href="images/portfolio/3.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+						<li><a href="portfolio-details.html"><i class="fa fa-book"></i></a></li>
                                             </ul>
                                     	</div>
                                     </div>
@@ -365,6 +314,7 @@
                                             <ul class="nav nav-pills">
                                             	<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
                                             	<li><a href="images/portfolio/4.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+						<li><a href="portfolio-details.html"><i class="fa fa-book"></i></a></li>
                                             </ul>
                                     	</div>
                                     </div>
@@ -384,6 +334,26 @@
                                             <ul class="nav nav-pills">
                                             	<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
                                             	<li><a href="images/portfolio/5.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
+						<li><a href="portfolio-details.html"><i class="fa fa-book"></i></a></li>
+                                            </ul>
+                                    	</div>
+                                    </div>
+                                    <div class="portfolio-info ">
+                                        <h2>Sailing Vivamus</h2>
+                                    </div>						
+				</div>
+			    </div>
+
+			    <div class="portfolio postdoc mix_all" data-cat="postdoc" style="display: inline-block; opacity: 1;">
+				<div class="portfolio-wrapper ">		
+				    <div class="portfolio-single">
+                                        <div class="portfolio-thumb">
+                                            <img src="images/portfolio/2.jpg" class="img-responsive" alt="">
+                                        </div>
+                                        <div class="portfolio-view">
+                                            <ul class="nav nav-pills">
+                                            	<li><a href="portfolio-details.html"><i class="fa fa-link"></i></a></li>
+                                            	<li><a href="images/portfolio/2.jpg" data-lightbox="example-set"><i class="fa fa-eye"></i></a></li>
                                             </ul>
                                     	</div>
                                     </div>

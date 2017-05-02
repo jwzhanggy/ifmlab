@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Contact Us 2  | Triangle</title>
+    <title>Blog Default | Triangle</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/prettyPhoto.css" rel="stylesheet"> 
+    <link href="css/lightbox.css" rel="stylesheet"> 
     <link href="css/animate.min.css" rel="stylesheet"> 
 	<link href="css/main.css" rel="stylesheet">
 	<link href="css/responsive.css" rel="stylesheet">
@@ -25,7 +25,7 @@
 </head><!--/head-->
 
 <body>
-	<header id="header">      
+    <header id="header">      
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 overflow">
@@ -53,10 +53,10 @@
 
                     <a class="navbar-brand" href="index.html">
                     	<h1><img src="images/ifmlab_logo.png" alt="logo" width="270" height="75"></h1>
-                    </a> 
+                    </a>
                     
                 </div>
-		<div class="collapse navbar-collapse">
+                <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown"><a href="index.html">Home<i class="fa fa-angle-down"></i></a>
                             <ul role="menu" class="sub-menu">
@@ -114,7 +114,7 @@
                                           
                     </ul>
                 </div>
-                <div class="search">
+<!--                <div class="search">
                     <form role="form">
                         <i class="fa fa-search"></i>
                         <div class="field-toggle">
@@ -122,46 +122,84 @@
                         </div>
                     </form>
                 </div>
+-->
             </div>
         </div>
-    </header>
-    <!--/#header-->    
-
+    </header>	
     <section id="page-breadcrumb">
         <div class="vertical-center sun">
              <div class="container">
                 <div class="row">
                     <div class="action">
                         <div class="col-sm-12">
-                            <h1 class="title">Contact US</h1>
-                        </div>                        
+                            <h1 class="title">Q&A</h1>
+                            <p>Frequently Asked Questions</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
    </section>
-    <!--/#action-->
+    <!--/#page-breadcrumb-->
 
-    <section id="map-section">
-        <div class="container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3439.646661605451!2d-84.3016132844392!3d30.446116906439276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88ecf508f1c5c12b%3A0x83b0fdb5ebe69480!2sFSU+Computer+Science+Department!5e0!3m2!1sen!2sus!4v1493690253046" width="850" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <div class="contact-info">
-                <h2>Contacts</h2>
-                <address>
-			E-mail: <a href="mailto:jwzhanggy@gmail.com">jwzhanggy [AT] gmail [dot] com</a> <br> 
-                	Phone: +1 (123) 456 7890 <br> 
-                	Fax: +1 (123) 456 7891 <br> 
-                </address>
-
-                <h2>Address</h2>
-                <address>
-                	253 Love Building<br>
-			Florida State University<br>
-			Tallahassee, FL 32306-4530<br> 
-                </address>
+    <section id="coming-soon">        
+         <div class="container">
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">                    
+                    <div class="text-center coming-content">
+			<div id="accordion-container">
+				<div class="panel-group" id="accordion">
+                    			<div class="panel panel-default">
+                        			<div class="panel-heading">
+                            				<h4 class="panel-title">
+                                				<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+									<p style="text-align:left">
+                                    						Question 1. Foursquare and Twitter?
+									</p>
+                                       				</a>
+                            				</h4>
+                        			</div>
+                        			<div id="collapseThree" class="panel-collapse collapse">
+                            				<div class="panel-body">
+								<p style="text-align:left;padding-left:18em;text-indent:-1em">
+								@article{zhang_ifmlab_ifmlabpy,<br>
+  									title={IFMLab.py},<br>
+  									author={Jiawei Zhang},<br>
+  									year={2016},<br>
+								}
+								</p>
+                            				</div>
+                        			</div>
+                   			 </div>
+                    			<div class="panel panel-default">
+                        			<div class="panel-heading">
+                            				<h4 class="panel-title">
+                               					<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                    					<p style="text-align:left">
+                                    						Question 2. Foursquare and Twitter?
+									</p>
+                                       				</a>
+                            				</h4>
+                        			</div>
+                        			<div id="collapseFour" class="panel-collapse collapse">
+                            				<div class="panel-body">
+                                				<p style="text-align:left;padding-left:18em;text-indent:-1em">
+								@article{zhang_ifmlab_ifmlabpy,<br>
+  									title={IFMLab.py},<br>
+  									author={Jiawei Zhang},<br>
+  									year={2016},<br>
+								}
+								</p>
+                            				</div>
+                        			</div>
+                    			</div>
+                		</div><!--/#accordion-->
+            		</div><!--/#accordion-container-->
+		    </div>                    
+                </div>
             </div>
-        </div>
-    </section> <!--/#map-section-->        
+        </div>       
+    </section>
 
     <footer id="footer">
         <div class="container">
@@ -243,9 +281,40 @@
 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
-    <script type="text/javascript" src="js/gmaps.js"></script>
+    <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>   
+    <script>
+	$(function(){
+		$('.nav a').click(function(){
+			$(this).parent().addClass('active').siblings().removeClass('active')	
+		})
+	})
+    </script>
+    <script language="JavaScript">
+        var allTypes = new Array('machine-learning', 'data-mining')
+        function showAllPublication() {
+            $(".blog").show("slow");
+        }
+        function showContentWithType(typeName) {
+            $(".blog").hide("slow");
+            $("." + typeName).show("slow");
+        }
+    </script>
+    <script>
+	$(document).ready(function () {
+    	$('.nav-toggle').click(function () {
+        	var collapse_content_selector = $(this).attr('href');
+        	var toggle_switch = $(this);
+        	$(collapse_content_selector).toggle(function () {
+            	if ($(this).css('display') == 'none') {
+                	toggle_switch.html('Show');
+            	} else {
+                	toggle_switch.html('Hide');
+            	}
+       	    });
+    	});
+    });
+    </script>
 </body>
 </html>
