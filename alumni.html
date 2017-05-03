@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Portfolio Two Columns | Triangle</title>
+<title>Alumni | IFM Lab</title>
 <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
@@ -23,75 +23,42 @@
     
 	
 
-<link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="shortcut icon" href="images/ifmlab_shortcut.png">
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
 
-</head>
-<body> 		
-	<script>
-	$(function(){
-		$('.nav a').click(function(){
-			$(this).parent().addClass('active').siblings().removeClass('active')	
-		})
-	})
-	</script>
+<style type="text/css">
+	.fa_custom_weibo:hover {
+	    color: #FF0000
+	}
+	.fa_custom_wechat:hover {
+	    color: #009900
+	}
 
-	<!-- Script for gallery Here -->
-	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-		<script type="text/javascript">
-		$(function () {
-			var filterList = {
-				init: function () {
-					// MixItUp plugin
-					// http://mixitup.io
-					$('#portfoliolist').mixitup({
-						targetSelector: '.portfolio',
-						filterSelector: '.filter',
-						effects: ['fade'],
-						easing: 'snap',
-						// call the hover effect
-						onMixEnd: filterList.hoverEffect()
-					});				
-				},
-				hoverEffect: function () {
-					// Simple parallax effect
-					$('#portfoliolist .portfolio').hover(
-						function () {
-							$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
-							$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
-						},
-						function () {
-							$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
-							$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
-						}		
-					);				
-				}
-			};
-			// Run the show!
-			filterList.init();
-		});	
-		</script>
-		<!-- Gallery Script Ends -->
+    </style>
+</head><!--/head-->
 
-    <header id="header">      
+<body>
+	<header id="header">      
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 overflow">
                    <div class="social-icons pull-right">
                         <ul class="nav nav-pills">
-                            <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                            <li><a href=""><i class="fa fa-twitter"></i></a></li>
-                            <li><a href=""><i class="fa fa-google-plus"></i></a></li>
-                            <li><a href=""><i class="fa fa-dribbble"></i></a></li>
-                            <li><a href=""><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/ifmlab/"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/ifm_lab"><i class="fa fa-twitter"></i></a></li>
+			    <li><a href=""><i class="fa fa-weibo fa_custom_weibo"></i></a></li>
+			    <li><a href=""><i class="fa fa-wechat fa_custom_wechat"></i></a></li>
+                            <li><a href="https://aboutme.google.com/b/105564454742310795598/"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/ifmlab"><i class="fa fa-linkedin"></i></a></li>
                         </ul>
                     </div> 
                 </div>
              </div>
         </div>
+	
         <div class="navbar navbar-inverse" role="banner">
             <div class="container">
                 <div class="navbar-header">
@@ -410,11 +377,121 @@
 
     <!--/#projects-->
 
+    <footer id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center bottom-separator">
+                    <img src="images/home/under.png" class="img-responsive inline" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="testimonial bottom">
+                        <h2>Quotes</h2>
+                        <div class="media">
+                            <div class="pull-left">
+                                <a href="#"><img src="images/home/Aristotle.jpg" alt="" style="width:70px;height:90px;"></a>
+                            </div>
+                            <div class="media-body">
+                                <blockquote>All men by nature desire to know.</blockquote>
+                                <h3><a href="https://en.wikipedia.org/wiki/Aristotle">- Aristotle</a></h3>
+                            </div>
+                         </div>
+			 <div class="media">
+			    <div class="media-body">
+                                <blockquote>Three passions, simple but overwhelmingly strong, have governed my life: the longing for love, the search for knowledge, and unbearable pity for the suffering of mankind. These passions, like great winds, have blown me hither and thither, in a wayward course, over a deep ocean of anguish, reaching to the very verge of despair.</blockquote>
+                                <h3><a href="https://en.wikipedia.org/wiki/Bertrand_Russell">- Bertrand Russell</a></h3>
+                            </div>
+                        </div>   
+                    </div> 
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="contact-info bottom">
+                        <h2>Contacts</h2>
+                        <address>
+                        E-mail: <a href="mailto:someone@example.com">jwzhanggy [AT] gmail [dot] com</a> <br> 
+                        Phone: +1 (123) 456 7890 <br> 
+                        Fax: +1 (123) 456 7891 <br> 
+                        </address>
+
+                        <h2>Address</h2>
+                        <address>
+                        253 Love Building<br> 
+			Florida State University<br> 
+			Tallahassee, FL 32306-4530 <br> 
+			United States <br>
+                        </address>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="contact-form bottom">
+                        <h2>Send a message</h2>
+			<form action="mailto:jwzhanggy@gmail.com" method="post" enctype="text/plain">
+			<input type="text" name="name" class="form-control" required="required" placeholder="Your Name">
+			<input type="email" name="email" class="form-control" required="required" placeholder="Your Email ID">
+			<textarea name="message" id="message" required="required" class="form-control" rows="8" placeholder="Your text here"></textarea>
+			<input type="submit" value="Send" class="btn btn-submit">
+			</form>
+                    </div>
+                </div>
+                <div class="col-sm-12">
+                    <div class="copyright-text text-center">
+                        <p>&copy; IFM Lab 2017. All Rights Reserved.</p>
+                        <p>Designed by <a target="_blank" href="http://www.themeum.com">Themeum</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/#footer-->
+
     <!--<script type="text/javascript" src="js/jquery.js"></script>--><!--author: clm; update: delete to display filter-->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/jquery.isotope.min.js"></script>
     <script type="text/javascript" src="js/lightbox.min.js"></script>
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>  
+    <script>
+	$(function(){
+		$('.nav a').click(function(){
+			$(this).parent().addClass('active').siblings().removeClass('active')	
+		})
+	})
+    </script>
+
+	<!-- Script for gallery Here -->
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			var filterList = {
+				init: function () {
+					// MixItUp plugin
+					// http://mixitup.io
+					$('#portfoliolist').mixitup({
+						targetSelector: '.portfolio',
+						filterSelector: '.filter',
+						effects: ['fade'],
+						easing: 'snap',
+						// call the hover effect
+						onMixEnd: filterList.hoverEffect()
+					});				
+				},
+				hoverEffect: function () {
+					// Simple parallax effect
+					$('#portfoliolist .portfolio').hover(
+						function () {
+							$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+						},
+						function () {
+							$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+						}		
+					);				
+				}
+			};
+			// Run the show!
+			filterList.init();
+		});	
+	</script>
+		<!-- Gallery Script Ends -->
 </body>
 </html>									
