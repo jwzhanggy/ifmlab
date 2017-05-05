@@ -1666,7 +1666,7 @@ a.read-more:hover{
 }
 
 .post-bottom{
-  border-top: 1px solid #eeeeee;
+  border-top: 0px solid #eeeeee;
   padding-top: 10px;
   margin-top: 20px;
   margin: 20px -20px 0;
@@ -1683,7 +1683,7 @@ Blog with right sidebar
 }
 
 .single-blog .post-bottom{
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 0px solid #eeeeee;
   padding-top: 10px;
   padding-bottom: 10px;
 }
