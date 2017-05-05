@@ -1503,7 +1503,7 @@ Blog Default
 
 .single-blog.timeline {
   background: #FFFFFF;
-  border: 1px solid #EEEEEE;
+  border: 0px solid #EEEEEE;
   border-bottom: 0;
   position: relative;
   padding-bottom: 0;
