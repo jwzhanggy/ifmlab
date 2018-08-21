@@ -167,7 +167,7 @@
 			    <ul class="nav navbar-stacked" role="tablist">
 				    <!--<ul class="nav nav-pills" role="tablist">-->
 				 <li role="presentation" class="dropdown ">
-				 <a class="dropdown-toggle" onclick="javascript:showAllPublication();" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">All <span class="badge pull-right">62</span></a>
+				 <a class="dropdown-toggle" onclick="javascript:showAllPublication();" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">All <span class="badge pull-right">65</span></a>
 				 <!--<ul class="dropdown-menu">
 				    <li style="padding-right:10px; padding-left:10px"><a href="https://scholar.google.com/citations?user=Lh7VfoMAAAAJ">Google Scholar (citations)</a></li>
 				    <li style="padding-right:10px; padding-left:10px"><a href="http://dblp.uni-trier.de/pers/hd/k/Kong:Xiangnan">DBLP </a></li>
@@ -177,6 +177,7 @@
 				<li class="dropdown">
 				  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="true">Year<span class="caret"></span></a>
 				  <ul class="dropdown-menu">
+				  <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('2019');"> 2019 <span class="badge pull-right">0</span> </a></li>
 				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('2018');"> 2018 <span class="badge pull-right">12</span> </a></li>
 				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('2017');"> 2017 <span class="badge pull-right">17</span> </a></li>
 				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('2016');"> 2016 <span class="badge pull-right">17</span> </a></li>
@@ -191,8 +192,8 @@
 				  <ul class="dropdown-menu">
 				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('conference');"> Conference Paper &nbsp; &nbsp; <span class="badge pull-right">46</span> </a></li>
 				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('journal');"> Journal Article <span class="badge pull-right">11</span> </a></li>
-				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('preprint');"> Preprint <span class="badge pull-right">1</span> </a></li>
-				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('book-tutorial');"> Book/Survey <span class="badge pull-right">1</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('preprint');"> Preprint <span class="badge pull-right">3</span> </a></li>
+				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('survey-tutorial');"> Survey/Tutorial <span class="badge pull-right">1</span> </a></li>
 				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('book');"> Book Chapter <span class="badge pull-right">3</span> </a></li>
 				    <li style="padding-right:10px; padding-left:10px"><a href="javascript:showContentWithType('report');"> Technical Report <span class="badge pull-right">1</span> </a></li>
 				  </ul>
@@ -278,12 +279,12 @@
                     <div class="col-md-9 col-sm-8">
                         <div class="padding-left">
                             <div class="row">
-                                 <!------------------------------------------------------------------------------------------------------------>
+			        <div class="panel-body">
+			            <!------------------------------------------------------------------------------------------------------------>
 			        	    <h3>Book and Survey</h3>
 				    <ul class="list-group">
-				    
 				   	<!--------------------------------------- -->
-					<li class="" style="border:0;padding:10px 0px">
+					<li class="data-mining machine-learning network-alignment link-prediction social-network fusion-learning pu-learning semisupervised-learning survey-tutorial publication" style="border:0;padding:10px 0px">
 					    <div class="media">
 						<div class="pull-left">
 						    <a href="">arXiv</a>
@@ -298,8 +299,155 @@
 					<!--------------------------------------- -->
 				</ul>
 				<!------------------------------------------------------------------------------------------------------------>
-				   
-			        <div class="panel-body">
+				
+				<!------------------------------------------------------------------------------------------------------------>
+			        	<h3>Preprint</h3>
+				    <ul class="list-group">
+				        <!--------------------------------------- 
+					<li class="list-group-item machine-learning network-embedding community-detection information-propagation social-network deep-learning preprint publication" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="">arXiv</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="https://arxiv.org/abs/1711.11466">LATTE: Application Oriented Network Embedding</a></h4>
+						    <p>Jiawei Zhang, Limeng Cui, Yanjie Fu, Fisher B. Gouza</p>
+						   <p><a href="https://arxiv.org/abs/1711.11466">Preprint</a>, <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-11466"> BIB </a></p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+					
+				   	<!--------------------
+					<li class="list-group-item machine-learning data-mining social-science fake-news social-network deep-learning preprint publication" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="">arXiv</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="https://arxiv.org/abs/1805.08751">Fake News Detection with Deep Diffusive Network Model</a></h4>
+						    <p>Jiawei Zhang, Limeng Cui, Yanjie Fu and Fisher B. Gouza</p>
+						   <p><a href="https://arxiv.org/abs/1805.08751">Preprint</a>, <a href=""> BIB </a></p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+					
+					<!---------------------------------------
+					<li class="list-group-item machine-learning software-engineering program-synthesis program-code deep-learning preprint publication" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="">arXiv</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="https://arxiv.org/abs/1805.08747">EgoCoder: Intelligent Program Synthesis with Hierarchical Sequential Neural Network Model</a></h4>
+						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
+						   <p><a href="https://arxiv.org/abs/1805.08747">Preprint</a>, <a href=""> BIB </a></p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+					
+					<!--------------------------------------- -->
+					<li class="list-group-item machine-learning deep-learning preprint publication" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="">arXiv</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="https://arxiv.org/abs/1805.07507">Reconciled Polynomial Machine: A Unified Representation of Shallow and Deep Learning Models</a></h4>
+						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
+						   <p><a href="https://arxiv.org/abs/1805.07507">Preprint</a>, <a href=""> BIB </a></p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+					
+					<!---------------------------------------
+					<li class="list-group-item machine-learning network-embedding social-network deep-learning preprint publication" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="">arXiv</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="https://arxiv.org/abs/1805.07504">Deep Loopy Neural Network Model for Graph Structured Data Representation Learning</a></h4>
+						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
+						   <p><a href="https://arxiv.org/abs/1805.07504">Preprint</a>, <a href=""> BIB </a></p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+					
+					<!--------------------------------------- -->
+					<li class="list-group-item machine-learning representation-learning image-data text-data multi-media ensemble-learning deep-learning preprint publication" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="">arXiv</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="https://arxiv.org/abs/1805.07502">On Deep Ensemble Learning from a Function Approximation Perspective</a></h4>
+						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
+						   <p><a href="https://arxiv.org/abs/1805.07502">Preprint</a>, <a href=""> BIB </a></p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+					
+					<!--------------------------------------- -->
+					<li class="list-group-item machine-learning mathematical-optimization image-data multi-media deep-learning preprint publication" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="">arXiv</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="https://arxiv.org/abs/1805.07500">GADAM: Genetic-Evolutionary ADAM for Deep Neural Network Optimization</a></h4>
+						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
+						   <p><a href="https://arxiv.org/abs/1805.07500">Preprint</a>, <a href=""> BIB </a></p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+					
+					<!---------------------------------------
+					<li class="list-group-item machine-learning network-embedding social-network deep-learning preprint publication" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="">arXiv</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="https://arxiv.org/abs/1805.07508">GEN Model: An Alternative Approach to Deep Neural Network Models</a></h4>
+						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
+						   <p><a href="https://arxiv.org/abs/1805.07508">Preprint</a>, <a href=""> BIB </a></p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+					
+					
+					<!---------------------------------------
+					<li class="list-group-item machine-learning network-embedding social-network deep-learning preprint publication" style="border:0;padding:10px 0px">
+					    <div class="media">
+						<div class="pull-left">
+						    <a href="">arXiv</a>
+						</div>
+						<div class="media-body">
+						    <h4><a href="https://arxiv.org/abs/1803.08631">SEGEN: Sample-Ensemble Genetic Evolutional Network Model</a></h4>
+						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
+						   <p><a href="https://arxiv.org/abs/1803.08631">Preprint</a>, <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1803-08631"> BIB </a></p>
+						</div>
+					    </div>
+					</li>
+					<!--------------------------------------- -->
+				</ul>
+				<!------------------------------------------------------------------------------------------------------------>
+				
+				<!------------------------------------------------------------------------------------------------------------>
+			        	    <h3>2019</h3>
+				    <ul class="list-group">
+				    
+				    </ul>
+				<!------------------------------------------------------------------------------------------------------------>
+
 			            <!------------------------------------------------------------------------------------------------------------>
 			        	    <h3>2018</h3>
 				    <ul class="list-group">
@@ -377,135 +525,8 @@
 					    </div>
 					</li>
 					<!--------------------------------------- -->
-				        
-				        <!------------------
-					<li class="list-group-item machine-learning data-mining social-science fake-news social-network deep-learning preprint publication 2018" style="border:0;padding:10px 0px">
-					    <div class="media">
-						<div class="pull-left">
-						    <a href="">arXiv</a>
-						</div>
-						<div class="media-body">
-						    <h4><a href="https://arxiv.org/abs/1805.08751">Fake News Detection with Deep Diffusive Network Model</a></h4>
-						    <p>Jiawei Zhang, Limeng Cui, Yanjie Fu and Fisher B. Gouza</p>
-						   <p><a href="https://arxiv.org/abs/1805.08751">Preprint</a>, <a href=""> BIB </a></p>
-						</div>
-					    </div>
-					</li>
-					
-					
-					<li class="list-group-item machine-learning software-engineering program-synthesis program-code deep-learning preprint publication 2018" style="border:0;padding:10px 0px">
-					    <div class="media">
-						<div class="pull-left">
-						    <a href="">arXiv</a>
-						</div>
-						<div class="media-body">
-						    <h4><a href="https://arxiv.org/abs/1805.08747">EgoCoder: Intelligent Program Synthesis with Hierarchical Sequential Neural Network Model</a></h4>
-						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
-						   <p><a href="https://arxiv.org/abs/1805.08747">Preprint</a>, <a href=""> BIB </a></p>
-						</div>
-					    </div>
-					</li>
-					
-					
-					<li class="list-group-item machine-learning deep-learning preprint publication 2018" style="border:0;padding:10px 0px">
-					    <div class="media">
-						<div class="pull-left">
-						    <a href="">arXiv</a>
-						</div>
-						<div class="media-body">
-						    <h4><a href="https://arxiv.org/abs/1805.07507">Reconciled Polynomial Machine: A Unified Representation of Shallow and Deep Learning Models</a></h4>
-						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
-						   <p><a href="https://arxiv.org/abs/1805.07507">Preprint</a>, <a href=""> BIB </a></p>
-						</div>
-					    </div>
-					</li>
-					
-					
-					<li class="list-group-item machine-learning network-embedding social-network deep-learning preprint publication 2018" style="border:0;padding:10px 0px">
-					    <div class="media">
-						<div class="pull-left">
-						    <a href="">arXiv</a>
-						</div>
-						<div class="media-body">
-						    <h4><a href="https://arxiv.org/abs/1805.07504">Deep Loopy Neural Network Model for Graph Structured Data Representation Learning</a></h4>
-						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
-						   <p><a href="https://arxiv.org/abs/1805.07504">Preprint</a>, <a href=""> BIB </a></p>
-						</div>
-					    </div>
-					</li>
-					
-					
-					<li class="list-group-item machine-learning representation-learning image-data text-data multi-media ensemble-learning deep-learning preprint publication 2018" style="border:0;padding:10px 0px">
-					    <div class="media">
-						<div class="pull-left">
-						    <a href="">arXiv</a>
-						</div>
-						<div class="media-body">
-						    <h4><a href="https://arxiv.org/abs/1805.07502">On Deep Ensemble Learning from a Function Approximation Perspective</a></h4>
-						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
-						   <p><a href="https://arxiv.org/abs/1805.07502">Preprint</a>, <a href=""> BIB </a></p>
-						</div>
-					    </div>
-					</li>
-					
-					
-					<li class="list-group-item machine-learning mathematical-optimization image-data multi-media deep-learning preprint publication 2018" style="border:0;padding:10px 0px">
-					    <div class="media">
-						<div class="pull-left">
-						    <a href="">arXiv</a>
-						</div>
-						<div class="media-body">
-						    <h4><a href="https://arxiv.org/abs/1805.07500">GADAM: Genetic-Evolutionary ADAM for Deep Neural Network Optimization</a></h4>
-						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
-						   <p><a href="https://arxiv.org/abs/1805.07500">Preprint</a>, <a href=""> BIB </a></p>
-						</div>
-					    </div>
-					</li>
-					
-					
-					<li class="list-group-item machine-learning network-embedding social-network deep-learning preprint publication 2018" style="border:0;padding:10px 0px">
-					    <div class="media">
-						<div class="pull-left">
-						    <a href="">arXiv</a>
-						</div>
-						<div class="media-body">
-						    <h4><a href="https://arxiv.org/abs/1805.07508">GEN Model: An Alternative Approach to Deep Neural Network Models</a></h4>
-						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
-						   <p><a href="https://arxiv.org/abs/1805.07508">Preprint</a>, <a href=""> BIB </a></p>
-						</div>
-					    </div>
-					</li>
-					
-					
-					<li class="list-group-item machine-learning network-embedding social-network deep-learning preprint publication 2018" style="border:0;padding:10px 0px">
-					    <div class="media">
-						<div class="pull-left">
-						    <a href="">arXiv</a>
-						</div>
-						<div class="media-body">
-						    <h4><a href="https://arxiv.org/abs/1803.08631">SEGEN: Sample-Ensemble Genetic Evolutional Network Model</a></h4>
-						    <p>Jiawei Zhang, Limeng Cui, Fisher B. Gouza</p>
-						   <p><a href="https://arxiv.org/abs/1803.08631">Preprint</a>, <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1803-08631"> BIB </a></p>
-						</div>
-					    </div>
-					</li>
-					
-					
-					<li class="list-group-item machine-learning network-embedding community-detection information-propagation social-network deep-learning preprint publication 2018" style="border:0;padding:10px 0px">
-					    <div class="media">
-						<div class="pull-left">
-						    <a href="">arXiv</a>
-						</div>
-						<div class="media-body">
-						    <h4><a href="https://arxiv.org/abs/1711.11466">LATTE: Application Oriented Network Embedding</a></h4>
-						    <p>Jiawei Zhang, Limeng Cui, Yanjie Fu, Fisher B. Gouza</p>
-						   <p><a href="https://arxiv.org/abs/1711.11466">Preprint</a>, <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1711-11466"> BIB </a></p>
-						</div>
-					    </div>
-					</li>
-					<!--------------------------------------- -->
 
-				    
+
 				    	<!--------------------------------------- -->
 					<li class="list-group-item data-mining machine-learning urban-traffic-planning urban-traffic-data others fusion-learning supervised-learning conference publication 2018" style="border:0;padding:10px 0px">
 					    <div class="media">
